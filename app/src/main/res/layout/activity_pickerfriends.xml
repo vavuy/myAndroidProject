@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.addEvent._PickerTime">
+
+    <TextView
+        android:id="@+id/TextViewPickerfriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="選擇好友"
+        android:textSize="36dp" />
+
+    <EditText
+        android:id="@+id/Editexfpicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewPickerfriends"
+        android:hint="搜尋好友" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView_fpicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Editexfpicker"
+        android:visibility="gone"
+        android:layout_marginTop="1dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="9dp"
+        android:layout_toLeftOf="@id/Btn_addfpicker"
+        android:layout_weight="1"
+        android:background="@drawable/select_btn_color"
+        android:text="回上頁" />
+
+    <Button
+        android:id="@+id/Btn_addfpicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/select_btn_color"
+        android:text="送出" />
+
+</RelativeLayout>

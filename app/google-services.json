@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "940243353450",
+    "project_id": "topic-a32f6",
+    "storage_bucket": "topic-a32f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940243353450:android:06b81456cb0ce7405e6f13",
+        "android_client_info": {
+          "package_name": "com.example.inus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940243353450-3bm2nf8komj20g2cu8o1svthf43p1rpc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkbvAtj9RTQ_GdIxhNDl9dsBLaVxWbsyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940243353450-3bm2nf8komj20g2cu8o1svthf43p1rpc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

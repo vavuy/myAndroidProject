@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".Activity.addEvent._group">
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:text="新增行程"
+    android:textSize="36dp" />
+
+    <EditText
+        android:id="@+id/edtext1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:ems="10"
+        android:hint="標題"
+        android:inputType="textPersonName"
+        android:paddingTop="30dp" />
+
+    <EditText
+        android:id="@+id/edtext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtext1"
+        android:ems="10"
+        android:hint="地點"
+        android:inputType="textPersonName"
+
+        android:paddingTop="30dp" />
+
+    <EditText
+        android:id="@+id/edtext3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtext2"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:hint="備註(選填)"
+        android:inputType="text"
+        android:paddingTop="30dp" />
+
+    <Switch
+        android:id="@+id/switch_groupbuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtext3"
+        android:layout_alignParentRight="true"
+        android:text="是否團購" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@id/button5"
+        android:layout_weight="1"
+        android:background="@drawable/select_btn_color"
+        android:text="取消" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight='true'
+        android:layout_alignParentBottom='true'
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/select_btn_color"
+        android:text="送出" />
+
+
+
+
+</RelativeLayout>

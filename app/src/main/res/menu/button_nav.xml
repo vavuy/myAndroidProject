@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="home"
+        android:icon="@drawable/home_selector"
+        />
+    <item
+        android:title="shop"
+        android:id="@+id/shop"
+        android:icon="@drawable/shop_selector"
+        />
+    <item
+        android:title="track"
+        android:id="@+id/cart"
+        android:icon="@drawable/track_selector"
+        />
+    <item
+        android:title="talk"
+        android:id="@+id/talk"
+        android:icon="@drawable/talk_selector"
+        />
+    <item
+        android:title="notice"
+        android:id="@+id/none"
+        android:icon="@drawable/none_selector"
+        />
+</menu>

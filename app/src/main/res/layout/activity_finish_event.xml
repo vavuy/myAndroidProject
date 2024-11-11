@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.addEvent._finishEvent">
+
+    <TextView
+        android:id="@+id/textViewfinish1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="行程建立"
+        android:textSize="36dp" />
+
+    <ImageView
+        android:id="@+id/imagefinish_Event"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textViewfinish1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_baseline_event_24"
+        app:tint="@color/teal_200" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewfinish1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/imagefinish_Event"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:id="@+id/imagefinish_Location"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textViewfinish1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/img_location"
+        app:tint="@color/teal_200" />
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/imagefinish_Location"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_eventSubmit"
+        android:layout_below="@+id/textViewLocation" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="9dp"
+        android:layout_toLeftOf="@id/btn_eventSubmit"
+        android:layout_weight="1"
+        android:background="@drawable/select_btn_color"
+        android:text="回上頁" />
+
+
+    <Button
+        android:id="@+id/btn_eventSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight='true'
+        android:layout_alignParentBottom='true'
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/select_btn_color"
+        android:text="建立活動" />
+
+</RelativeLayout>

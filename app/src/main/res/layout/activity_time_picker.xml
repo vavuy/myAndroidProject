@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.addEvent._PickerTime">
+
+    <TextView
+        android:id="@+id/TextViewPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="選擇時間"
+        android:textSize="36dp" />
+
+    <TextView
+        android:id="@+id/addTimepicker_start"
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/TextViewPicker"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/select_btn_color"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="開始時間" />
+
+    <TextView
+        android:id="@+id/addTimepicker_end"
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/TextViewPicker"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/select_btn_color"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="結束時間" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView_timepicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addTimepicker_end"
+        android:layout_marginTop="1dp" />
+
+    <Button
+        android:id="@+id/timepicker_add_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycleView_timepicker"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/select_btn_color"
+        android:text="新增時段" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="9dp"
+        android:layout_toLeftOf="@id/Btn_addTimepicker"
+        android:layout_weight="1"
+        android:background="@drawable/select_btn_color"
+        android:text="回上頁" />
+
+    <Button
+        android:id="@+id/Btn_addTimepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/select_btn_color"
+        android:text="送出"
+        android:textAlignment="center" />
+
+
+
+
+</RelativeLayout>

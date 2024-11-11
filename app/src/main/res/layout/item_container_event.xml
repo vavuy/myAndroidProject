@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    >
+
+    <View
+        android:id="@+id/eventView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+         />
+    <TextView
+        android:id="@+id/eventCellTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:text="test"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/eventCellTime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventCellTitle"
+        android:paddingRight="10dp"
+        android:paddingLeft="30dp"
+        android:textStyle="italic"
+        android:textSize="14dp"
+        android:textColor="@color/gray"
+        android:text="t" />
+
+    <TextView
+        android:id="@+id/eventCellTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_toEndOf="@+id/eventCellTime"
+        android:text="aa"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/eventCellInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventCellTitle"
+        android:layout_marginLeft="50dp"
+        android:layout_toEndOf="@+id/eventCellTime"
+        android:text="bb"
+        android:textColor="@color/gray"
+        android:textSize="14dp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
